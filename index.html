@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+      * {
+        font-family: fantasy;
+      }
+
+      body {
+      background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+      }
+      input,
+      textarea,
+      select {
+        border: 2px solid navy;
+      }
+      fieldset {
+        border: 2px solid black;
+        width: 45%;
+      }
+      input:read-only {
+        background-color: rgb(234, 124, 124);
+        color: black;
+      }
+      input[type="radio"]:checked {
+        height: 20px;
+        width: 20px;
+      }
+      input[type="radio"]:checked + label {
+        color: rgb(238, 31, 31);
+      }
+      input[type="submit"] {
+        border-radius: 10px;
+        background-color: aqua;
+        height: 30px;
+        width: 80px;
+      }
+      input[type="reset"] {
+        border-radius: 20px;
+        background-color: aqua;
+        height: 30px;
+        width: 80px;
+      }
+      select {
+        background-color: rgb(237, 107, 100);
+       
+      }
+      input[type="radio"] {
+        cursor: pointer;
+      }
+      input:focus {
+        background-color: rgb(60, 112, 1);
+      }
+      input[type="text"] + span {
+        display: none;
+      }
+      input[type="text"]:hover + span {
+        display: inline;
+      }
+      img {
+        display: none;
+      }
+      input[type="email"]:focus:valid ~ img#img1 {
+        display: inline;
+        height: 20px;
+        width: 20px;
+      }
+      input[type="email"]:focus:invalid ~ img#img2 {
+        display: inline;
+        height: 20px;
+        width: 20px;
+      }
+      input[type="tel"]:focus:valid ~ img#img1 {
+        display: inline;
+        height: 20px;
+        width: 20px;
+      }
+      input[type="tel"]:focus:invalid ~ img#img2 {
+        display: inline;
+        height: 20px;
+        width: 20px;
+      }
+      input[type="reset"] {
+        border: 2px double red;
+        border-radius: 10px;
+      }
+   
+      
+      
+      h1 {
+    background: #237294;
+background: linear-gradient(180deg, rgba(35, 114, 148, 1) 0%, rgba(253, 29, 29, 1) 65%, rgba(252, 176, 69, 1) 100%);
+        background-clip: text;
+        color: transparent;
+      }
+      legend{
+        font-size: large;
+      }
+    </style>
+</head>
+<body>
+    
+    <h1>COURSE REGISTRAION FORM</h1>
+    <fieldset>
+    <legend>Personal details</legend>
+   
+    <table>
+        <tr>
+        <td><label >First Name </label></td>
+        <td><input type="text" placeholder="Mani"></td>
+        </tr>
+         <tr>
+        <td><label>Sure Name </label></td>
+        <td><input type="text" placeholder="mani"></td>
+        </tr>
+         <tr>
+        <td><label>Mobile number </label></td>
+        <td><input type="tel" placeholder="91234567990"></td>
+        </tr>
+         <tr>
+        <td><label>Email </label></td>
+        <td><input type="email"></td>
+        </tr>
+         <tr>
+        <td><label>Password </label></td>
+        <td><input type="password"></td>
+        </tr>
+         <tr>
+        <td><label>Confirm Password </label></td>
+        <td><input type="password"></td>
+        </tr>
+        <tr>
+        <td><label>DOB</label></td>
+        <td><input type="date"></td>
+        </tr>
+        <tr>
+        <td><label>Age</label></td>
+        <td><input type="number"></td>
+        </tr>
+        <tr>
+        <td><label>Gender</label></td>
+        <td>
+        <input type="radio" name="GEN"><label for="">MALE</label>
+        <input type="radio" name="GEN"><label for="">FEMALE</label>
+        <input type="radio" name="GEN"><label for="">OTHERS</label></td>
+        </tr>
+        <td>Select country</td>
+        <td>
+        <select name="" id="">
+            <option value="">INDIA</option>
+            <option value="">USA</option>
+            <option value="">EUROPE</option>
+        </select>
+        </td>
+        <tr>
+            <td>
+                <label for="">Upload file</label>
+                </td>
+                <td>
+                <input type="file">
+            </td>
+        </tr>
+        <tr>
+          <td>  <input type="reset">
+            </td>
+        </tr>
+    
+        
+    </table>
+    </fieldset>
+        <fieldset>
+            <legend>Course details</legend>
+            <table>
+            <tr>
+            <td><label for="'">select course</label></td>
+            <td>
+                <select name="" id="">
+                    <option value="">Java</option>
+                    <option value="">Python</option>
+                    <option value="">Fullstack</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Delivery mode</label>
+                    
+                </td>
+                
+                <td><input type="radio" name="mode" id="">Online
+                <input type="radio" name="mode" id="">Offline
+               
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Institute name</label></td>
+                <td><input type="text" name="" id="" value="Tap Academy" readonly></td>
+            </tr>
+            <tr>
+                <td><label for="">Comments</label></td>
+                
+                <td><textarea name="" id="" rows="4"></textarea></td>
+            </tr>
+           <tr>
+            <td>
+                 <input type="submit">
+            </td>
+           </tr>
+        
+        
+              </table>
+        </fieldset>
+      
+</body>
+</html>
